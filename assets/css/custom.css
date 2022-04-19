@@ -1,0 +1,204 @@
+.remove-sucees-message{display: none;}
+/********************************************
+******    Flash notice css start      *******
+*********************************************/
+/* flash */
+.inline-flash-wrapper{position:fixed;z-index:999999999;bottom:1.6rem;display:none;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;width:100%;pointer-events:none}.inline-flash-wrapper--is-visible{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex}.inline-flash{position:relative;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0 1.6rem;background:rgba(0,0,0,.88);-webkit-box-shadow:0 0 0 1px rgba(63,63,68,.05),0 1px 3px 0 rgba(63,63,68,.15);box-shadow:0 0 0 1px rgba(63,63,68,.05),0 1px 3px 0 rgba(63,63,68,.15);border-radius:3px;color:#fff;cursor:default;pointer-events:auto;font-size:1.6rem;font-weight:400;line-height:2.4rem}.inline-flash__message{padding:.8rem 1.6rem;margin-bottom:0;margin-top:0}p{margin:0;display:block;
+/*-webkit-margin-before:1em;-webkit-margin-after:1em;*/
+
+-webkit-margin-start:0;-webkit-margin-end:0}.inline-flash-wrapper.animated{-webkit-animation-duration:2s;animation-duration:2s;-webkit-animation-fill-mode:both;animation-fill-mode:both}@-webkit-keyframes bounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);transform:translateY(10px)}100%{-webkit-transform:translateY(0);transform:translateY(0)}}@keyframes bounceInUp{0%{opacity:0;-webkit-transform:translateY(2000px);-ms-transform:translateY(2000px);transform:translateY(2000px)}60%{opacity:1;-webkit-transform:translateY(-30px);-ms-transform:translateY(-30px);transform:translateY(-30px)}80%{-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px)}100%{-webkit-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0)}}.inline-flash-wrapper.bounceInUp{-webkit-animation-name:bounceInUp;animation-name:bounceInUp}@media screen and (min-width:768px){.inline-flash--nav-offset{margin-left:24rem}}@media (min-width:640px){.inline-flash{font-size:2rem;line-height:2.8rem}}
+/* error */
+.inline-flash.error{background:-webkit-gradient(linear,left top,left bottom,from(#e6391a),to(#d53417));background:linear-gradient(to bottom,#e6391a,#d53417);border-color:background:rgba(255,0,0,.88);-webkit-box-shadow:inset 0 1px 0 0 #e84528;box-shadow:inset 0 1px 0 0 #e84528}
+/* add other color flash here */
+/********************************************
+******    Flash notice css start Ene  *******
+*********************************************/
+/*added by Mazhar front*/
+ .Polaris-Banner-hol{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+      display: -moz-box;
+  display: -moz-flex;
+    display: flex;
+     -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+       -moz-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+   -webkit-box-align: justify;
+  -moz-box-align: justify;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+            -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+           -moz-justify-content: space-between;
+             -ms-justify-content: space-between;
+            justify-content: space-between;
+-webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+     -webkit-align-items: flex-start;
+       -moz-flex-align: flex-start;
+        -ms-flex-align: flex-start;
+            align-items: flex-start;
+}
+.Polaris-Banner{
+    background-color: #fff !important;
+    box-shadow: none !important;
+    border: 1px solid #c1c1c1;
+    border-radius: 4px;
+     flex:auto;
+     flex-direction:column;
+}
+.Polaris-Heading {
+    font-size: 1.6rem;
+    /*margin: 0 0 10px 0;*/
+}
+.Polaris-Banner-head{
+  flex-basis: 50%;
+           margin: 10px 0 15px 0;
+    text-indent: 200px;
+  
+}
+.Polaris-Banner-head span{
+    display:block;
+         margin:0 0 5px 0;
+          color:#212b36;
+    font-size: 17px;
+    font-weight: 600;
+}
+.Polaris-Banner-head p.grey-text{
+    color:#adb5bd;
+       margin:0 0 10px 0;
+}
+.Polaris-Banner p.enable-banner{
+      color:#212b36;
+       margin: 0 0 10px 7px;
+}
+/********** Added by Ghulam Fareed ********/
+.onoffswitch {
+    position: relative; width: 90px;
+        margin: 0 0 0 25px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+     border-radius: 20px;
+     width:60px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+     display: block;
+    float: left;
+    width: 50%;
+    height: 26px !important;
+    padding: 0;
+    line-height: 25px !important;
+    font-size: 14px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+padding: 2px 0 0 7px;
+     font-size: 12px;
+    background-color:#95bf47; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+ padding: 2px 7px 0 0;
+    font-size: 12px;
+    background-color: #dc3545; color: #ffffff;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block;
+    width: 20px;
+    height: 20px;
+    /* margin: 6px; */
+    background: #FFFFFF;
+    position: absolute;
+    top: 2px;
+    /* bottom: 0; */
+    margin: 1px 3px 0 0;
+    right: 64px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+   right: 31px;
+}
+.Polaris-Page {
+    margin: 0 auto;
+    padding: 0 1.5rem !important;
+    max-width: 99.8rem;
+}
+.banner-tick {
+    width: 7px;
+    height: 14px;
+    border-right: 2px solid #95BF47;
+    border-bottom: 2px solid #95BF47;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    margin: -9px 7px 0 0;
+    display: inline-block;
+}
+@media (max-width: 767px){
+.Polaris-Banner-head{
+  flex-basis: 100%!important;
+    text-indent: 0px!important;
+  
+}
+}
+
+.Polaris-Banner label{
+        font-size: 13px;
+    font-weight: 500;
+    margin: 0 0 4px 0;
+}
+.Polaris-Banner input[type=text].input-text{
+    margin: 0 0 10px 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #c1c1c1;
+        border-radius: 6px;
+}
+.Polaris-Banner input[type=text].input-text:focus{
+    outline:0;
+    border:1px solid #777272;
+}
+.Polaris-Banner input[type=email].input-text{
+    margin: 0 0 10px 0;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 1px solid #c1c1c1;
+        border-radius: 6px;
+}
+.Polaris-Banner input[type=email].input-text:focus{
+    outline:0;
+    border:1px solid #777272;
+}
+
+.Polaris-Banner p.cooloes-text{
+      color:#212b36;
+       margin: 0 0 10px 7px;
+}
