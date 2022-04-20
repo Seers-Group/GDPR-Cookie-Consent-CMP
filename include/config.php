@@ -45,8 +45,8 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
 /**
  * Configuration for: Shopify
  */
-define("SHOPIFY_API_KEY", "f9a59ca1f7f63d4c0bb6427f26b1e746");
-define("SHOPIFY_SECRET", "2329cab0c3aaba09f2eeb7616ef85ec4");
+define("SHOPIFY_API_KEY", "--- shopify api key ---");
+define("SHOPIFY_SECRET", "--- shopify secret key ---");
 define("SHOPIFY_SCOPE", "read_themes,write_themes,write_script_tags,read_script_tags, read_analytics");
 define("SITE_PATH", "https://gdpr-cookie-consent-banner-cookie-notice-seers.seersco.com/index.php");
 
