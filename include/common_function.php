@@ -485,7 +485,7 @@ class common_function {
         $cbattrjspath = 'https://seers-application-assets.s3.amazonaws.com/scripts/cbattributes.js';
         $arrscriptexist = [false, false];
         
-
+        
         //get all avialable tags
         $allscriptags = $this->prepare_api_condition(array('script_tags'), array(), 'GET', '0', $token, $shop);
         
@@ -503,12 +503,12 @@ class common_function {
                     $arrscriptexist[1] = false;
                     //remove the script
                     $scriptdel = $this->prepare_api_condition(array('script_tags', $thescript['id']), array(), 'DELETE', '0', $token, $shop);
-        }
+                }
             }
-        
             
-    }
-
+            
+        }
+        
         foreach ($arrsrc as $sitind => $sitesrc) {
             
             if (!$arrscriptexist[$sitind]) {
@@ -516,12 +516,12 @@ class common_function {
                 //add this src in scripts
                 $scriptinsert = $this->prepare_api_condition(array('script_tags'), array('script_tag' => array( "event"=>"onload", "src"=>$sitesrc)), 'POST', '0', $token, $shop);
                 
-}
-
-}
+            }
+            
+        }
 
     }
-
+    
     public function plugin_active_inactive($shopdetail, $isative = 0){
         $postData = array(
             'domain' => $shopdetail['shop'],
@@ -559,7 +559,7 @@ class common_function {
         $response =json_decode($response, TRUE);
 
         return $response;
-}
+    }
 
 }
 

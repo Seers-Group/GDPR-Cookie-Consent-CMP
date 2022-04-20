@@ -32,6 +32,7 @@ if (isset($_REQUEST['shop']) && $_REQUEST['shop'] != "") {
     $store_row = $cf_obj->select_row(TABLE_USER_STORES, $selected_field, $where);
 
     if (isset($_GET['code'])) {
+        $thehost = (!empty($_REQUEST['host']) ? $_REQUEST['host'] : "");
         $url_param_arr = array('client_id' => SHOPIFY_API_KEY, 'client_secret' => SHOPIFY_SECRET, 'code' => $_GET['code']);
         $responce = $cf_obj->prepare_api_condition(array('oauth', 'access_token'), $url_param_arr, 'POST', 0, '', $shop);
         
@@ -63,6 +64,7 @@ if (isset($_REQUEST['shop']) && $_REQUEST['shop'] != "") {
                 'email' => $email,
                 'name' => mysqli_real_escape_string($cf_obj->db_connection, $shopinfo['name']), /* e.g example */
                 'shop' => $shop, /* e.g example.myshopify.com */
+                'host' => $thehost,
                 'domain' => $shopinfo['domain'],
                 'token' => $token,
                 'owner' => $shopinfo['shop_owner'],
