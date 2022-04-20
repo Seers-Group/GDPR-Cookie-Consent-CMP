@@ -27,10 +27,10 @@ if ($_SERVER['SERVER_NAME'] == 'localhost') {
     define('SITE_USER_URL', 'https://localhost/private-apps/seers-cookie-consent/user/');
     define('ASSETS_URL','https://localhost/private-apps/seers-cookie-consent/assets/');  
 } elseif ($_SERVER['SERVER_NAME'] == 'gdpr-cookie-consent-banner-cookie-notice-seers.seersco.com') {
-    define("DB_HOST", "seers-serverless-rds-production-cluster.cluster-cieqfdwbhtqi.eu-central-1.rds.amazonaws.com");
-    define("DB_NAME", "seers_web_db");
-    define("DB_USER", "seers_web_user");
-    define("DB_PASS", "fCSsaZvX3M7XkEvxWQcXsqpAjXEJfPfEA243tjvtsJ9pccGuvA");
+    define("DB_HOST", "livedbhost");
+    define("DB_NAME", "livedbname");
+    define("DB_USER", "livedbuser");
+    define("DB_PASS", "livedbpassword");
     define('MODE', 'live');
     
     /* define site url and admin details */
