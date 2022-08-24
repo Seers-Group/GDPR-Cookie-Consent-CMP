@@ -14,7 +14,7 @@ class common_function {
     protected $shop_plan = '';
     protected $timezone = '';
     public $db_connection = null;
-    public $apisecrekkey = '$2y$10$9ygTfodVBVM0XVCdyzEUK.0FIuLnJT0D42sIE6dIu9r/KY3XaXXyS';
+    public $apisecrekkey = '-------apisecretkey--------------------------';
     protected $last_query = '';
 
     public function __construct($shop = '') {
